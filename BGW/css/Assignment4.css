@@ -1,0 +1,87 @@
+.header{
+  background-image: url("image/Thbrand/12.png");
+}
+.slogan{
+  text-align: center;
+  padding-top: 175px;
+  padding-bottom: 160px;
+}
+.h1{
+  font-family:Montserrat ;
+  font-weight: bold;
+  font-weight: lighter;
+  font-size: 48px;
+}
+.h2{
+  font-family:Montserrat ;
+  font-weight: bold;
+  font-weight: lighter;
+  font-size: 30px;
+}
+.box-left{
+  float: left;
+  padding-left: 200px;
+  box-sizing: border-box;
+}
+.anh_1 image{
+  width: 450px;
+  height: 330px;
+  margin-top: 65px;
+}
+.anh_2 image{
+  width: 450px;
+  height: 330px;
+  margin-top: 65px;
+}
+.h3{
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 30px;
+  width: 450px;
+}
+.h4{
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 13px;
+  margin-top: 30px;
+  width: 450px;
+}
+.doanvan{
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 13px;
+  margin-top: 25px;
+  width: 450px;
+}
+.box-right{
+  float: right;
+  padding-right: 200px;
+  padding-top: 126px ;
+}
+.h3{
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 170px;
+  width: 430px;
+}
+.h4{
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 13px;
+  margin-top: 30px;
+  width: 430px;
+}
+.box-right p {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 13px;
+  margin-top: 25px;
+  width: 430px;
+}
+.anh3 img{
+  width: 430px;
+  height: 350px;
+  margin-top: 65px;
+}
