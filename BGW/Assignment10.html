@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thời tiết London</title>
+  <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+<div class="weather">
+  <p>City: </p>
+  <p>Temp: </p>
+  <p>Min: </p>
+  <p>Max: </p>
+  <p>Desc: </p>
+</div>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $.ajax({
+      url: "data/Assignment10.json",
+      method: "get",
+      success: function (Weather) {
+        $(".weather p:nth-child(1)").append(Weather.name);
+        $(".weather p:nth-child(2)").append(Weather.main.temp);
+        $(".weather p:nth-child(3)").append(Weather.main.temp_min);
+        $(".weather p:nth-child(4)").append(Weather.main.temp_max);
+        $(".weather p:nth-child(5)").append(Weather.weather[0].description);
+      }
+    });
+  });
+</script>
+</body>
+</html>
