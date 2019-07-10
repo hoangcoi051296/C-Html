@@ -1,0 +1,347 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 1900px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container{
+  width: 1180px;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+}
+
+header{
+  width: 100%;
+  height: 750px;
+  background-image: url("../images/final/hbackground.png");
+}
+.top-link{
+  width: 100%;
+  height: 100px;
+}
+div.top-link >div.container{
+  border-bottom: #ffffff solid 2px;
+  height: 100px;
+}
+div.top-link > div.container > div.activebox{
+  float: left;
+  max-width: calc(30% - 10px);
+  padding-top: 35px;
+}
+.top-link .navigator{
+  float: right;
+  width: 70%;
+}
+.top-link .navigator li{
+  float: right;
+  font-family: Raleway sans-serif;
+  font-weight: bolder;
+  font-size: 12px;
+  list-style-type: none;
+  padding-left: 30px ;
+  padding-top: 35px;
+  text-transform:uppercase;
+}
+.banner{
+  width: 100%;
+}
+.banner h1{
+  padding-top: 160px;
+  font-family: Open+Sans sans-serif;
+  font-size: 65px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-transform:uppercase;
+}
+.banner h2{
+  font-family: Raleway sans-serif;
+  padding-top: 44px;
+  font-size: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+.banner .button{
+  padding-top: 75px;
+  text-align: center;
+}
+.banner .button button{
+  width: 200px;
+  height: 50px;
+  font-family: Raleway sans-serif;
+  font-weight: bold;
+  font-size:13px ;
+  background-color:#e84545;
+  text-align: center;
+  text-transform:uppercase;
+}
+section{
+  float: left;
+  width: 100%;
+}
+.features{
+  width: 100%;
+  float: left;
+}
+.features h1{
+  font-family: Raleway sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 30px;
+  color: #2d3033;
+}
+.features h2{
+  font-family: Raleway sans-serif;
+  font-size: 14px;
+  padding-top: 25px;
+  font-weight: normal;
+  color: #6c7279;
+}
+div.features > div.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-bottom: 105px;
+}
+.feature-content{
+  width: 30%;
+  margin-top: 70px;
+  text-align: center;
+}
+.feature-content:hover{
+  background-color: #3a3e64;
+}
+.works{
+  width: 100%;
+  height: 700px;
+  float: left;
+  margin: 0 auto;
+
+}
+.works-box img{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 350px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.works-box{
+  width: calc(25% - 10px);
+  float: left;
+  position: relative;
+}
+.works-box .overlay{
+  position:absolute;
+  top :50%;
+  left: 50%;
+  opacity: 0;
+  transition: 0.5s ease;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.works-box:hover img {
+  opacity: 0.3;
+}
+.works-box:hover .overlay{
+  opacity: 1;
+}
+.text {
+  color: red;
+
+  position: relative;
+}
+.text h1{
+  font-family: Raleway sans-serif;
+  font-size: 14px;
+}
+.team-section{
+  width: 100%;
+  height: 782px;
+  float: left;
+}
+div.team-section > div.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 105px;
+  padding-bottom: 105px;
+}
+.team-section h1{
+  font-family: Raleway sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  padding-top: 35px;
+  color: #2d3033;
+}
+.team-section h2{
+  font-family: Raleway sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  color:#e84545;
+  padding-top: 15px;
+  text-transform:uppercase;
+}
+.team-section h3{
+  font-family: Raleway sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  padding-top: 30px;
+  color: #6c7279;
+}
+.teams{
+  margin-bottom: 20px;
+}
+.teams .icon {
+  color: #ffffff;
+  padding-top:30px;
+}
+.icon button{
+  width: 40px;
+  height: 45px;
+}
+.icon button:hover{
+  background-color: #e84545;
+}
+.clients{
+  width: 100%;
+  height: 500px;
+  float: left;
+}
+.clients .box-left{
+  width: 50%;
+  float: left;
+}
+.clients .box-left img{
+  width: 950px;
+  height: 500px;
+}
+.clients .slider{
+  width: calc(50% - 5px );
+  float: right;
+  height: 500px;
+  background-color: #53354a;
+}
+.slider h1{
+  font-family: Cardo sans-serif ;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: italic;
+  padding-top: 115px;
+  padding-left: 85px;
+  color: #ffffff;
+}
+.slider h2{
+  font-family: Raleway sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 45px;
+  padding-left: 85px;
+  color: #ffffff;
+  text-transform:uppercase;
+}
+.slider {
+  background-color:#663333 ;
+  color: white;
+  width: 50%;
+  height: 500px;
+  display: flex;
+  overflow-x: auto;
+}
+.slider-item {
+  width: 950px;
+  height: 500px;
+  flex-shrink: 0;
+
+}
+.downloads{
+  width: 100%;
+  height: 340px;
+  float: left;
+  text-align: center;
+}
+.downloads h1{
+  font-family: Raleway sans-serif;
+  padding-top: 100px;
+  font-weight: lighter;
+  font-size: 28px;
+  color: #2d3033;
+}
+.downloads h2{
+  font-family: Raleway sans-serif;
+  padding-top: 15px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #2d3033;
+  text-transform:uppercase;
+}
+.downloads .click{
+  padding-top: 40px;
+}
+.downloads button{
+  font-family: Raleway sans-serif;
+  font-weight: bold;
+  text-transform:uppercase;
+  width: 280px;
+  height: 50px;
+  background-color: #e84545;
+}
+
+footer{
+  width: 100%;
+  height: 350px;
+  float: left;
+}
+.footer-top{
+  width: 100%;
+  height: 250px;
+  background-color:#3a3e64;
+  text-align: center;
+}
+div.footer-top >div.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+.footer-top h1{
+  font-family: Raleway sans-serif;
+  font-size: 14px;
+  text-transform: uppercase ;
+  font-weight: bold;
+  color: #ffffff;
+}
+.footer-top h2{
+  font-family: Raleway sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding-top: 25px;
+  color: #ffffff;
+}
+.share .icon{
+  padding-top: 25px;
+  color: #ffffff;
+}
+.footer-bot{
+  width: 100%;
+  height: 95px;
+  background-color: #313454;
+  text-align: center;
+}
+.footer-bot h1{
+  font-family: Raleway sans-serif ;
+  font-size: 14px;
+  font-weight: normal;
+  padding-top: 30px;
+  color: #ffffff;
+}
