@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+<h1> Danh sach</h1>
+<h2>Hello</h2>
+<h3>12345</h3>
+<table border="1">
+  <thead>
+  <th>Name</th>
+  <th>Price</th>
+  <th>Qty</th>
+  </thead>
+  <tbody>
+
+  </tbody>
+</table>
+
+<script type="text/javascript">
+  localStorage.setItem("abc","hello world");
+  $("h3").text(localStorage.getItem("abc"));
+
+
+
+  $(document).ready(function () {
+    $.ajax({
+      url: "data/SPDT.json",
+      method: "get",
+      success : function (data) {
+        $("h1").text(data.title);
+        var html= '';
+        for( var i=0; i< data.sanpham.length;i++){
+          html+=  '<tr><td>'+data.sanpham[i].name
+            +'</td><td>'+data.sanpham[i].price+'</td>'
+            +'<td>'+data.sanpham[i].SL+'</td></td></tr>';
+        }
+        $("tbody").html(html);
+
+      }
+    })
+  })
+</script>
+</body>
+</html>

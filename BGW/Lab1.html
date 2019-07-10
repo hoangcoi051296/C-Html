@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VA</title>
+  <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+<ul>
+  <li><p><span>Van Anh</span><b>9</b></p></li>
+</ul>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $.ajax({
+      url: "data/Lab1.json",
+      method: "get",
+      success : function (data) {
+
+        var html='';
+        for ( var i=0; i<data.students.length;i++){
+          html+= '<li><p><span>'+data.students[i].name+'</span><b>'+data.students[i].mark+'</b></p></li>'
+        }
+        $("ul").html(html);
+      }
+    })
+  })
+</script>
+</body>
+</html>

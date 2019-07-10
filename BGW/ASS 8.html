@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="Ass8.css">
+</head>
+<body>
+<div class="popup">
+  <h2> Coming soon</h2>
+  <div class="timer">
+    <span class="day">00:</span>
+    <span class="hour">00:</span>
+    <span class="min">00:</span>
+    <span class="sec">00</span>
+  </div>
+</div>
+<button type="button" onclick="Dulicate()">Click</button>
+
+<script type="text/javascript">
+  var d=2;
+  function Dulicate() {
+    var dv= document.getElementsByClassName("popup")[0];
+    var html = dv.outerHTML;
+    dv.outerHTML= html+html;
+
+  }
+  function Countdowntimer() {
+    var h=23;
+    var m=59;
+    var s=59;
+     var it=setInterval(function () {
+      if( d<=0&&h<=0&&m<=0&&s<=0){
+        clearInterval(it)}
+      var dd=document.getElementsByClassName("day");
+      var hh=document.getElementsByClassName("hour");
+       var mm=document.getElementsByClassName("min");
+      var ss= document.getElementsByClassName("sec");
+      for(i=0;i<dd.length;i++){
+        dd[i].innerText=d<10?"0"+d:d;
+        hh[i].innerText=h<10?"0"+h:h;
+        mm[i].innerText=m<10?"0"+m:m;
+        ss[i].innerText= s<10?"0"+s:s;
+      }
+      // document.getElementById("day").innerText=d<10?"0"+d:d;
+      // document.getElementById("hour").innerText=h<10?"0"+h:h;
+      // document.getElementById("min").innerText=m<10?"0"+m:m;
+      // document.getElementById("sec").innerText=s<10?"0"+s:s;
+      s--;
+      if (s<0){
+        m--;
+        s=59;
+      }
+      if(m<0){
+        h--;
+        m=59;
+      }
+      if(h<0){
+        d--;
+        h=23;
+      }
+
+
+    },1000)
+
+
+
+  }
+
+  Countdowntimer();
+
+</script>
+
+</body>
+</html>

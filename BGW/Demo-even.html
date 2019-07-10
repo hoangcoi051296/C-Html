@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo event</title>
+</head>
+<body>
+ <button type="button" onclick="demo_event()">Push</button>
+ <div  onmouseover="demo_even2()" onmouseout="demo_even2()" style="width: 100px ;height: 100px; background-color: red">
+   Content of division
+ </div>
+ <div onmouseenter="demo_event3()" onmouseleave="demo_event3()" style="width: 100px; height: 100px; background-color: yellow">
+   COntent division
+ </div>
+ <div oncopy="demo_event3()" onpaste="demo_event3()" oncut="demo_event3()" style="width: 100px; height: 100px; background-color: bisque">
+   COntent division
+ </div>
+ <input type="text" onkeydown="logWord()"  onkeyup="logWord1()" onkeypress="logWord2()" placeholder="Nhap">
+<br/>
+ <select name="select-name" onchange="logWord3()">
+   <option value="1">OP-1</option>
+   <option value="2">OP-2</option>
+   <option value="3">OP-3</option>
+ </select>
+<script>
+  function demo_event() {
+    alert("Event pushing...");
+  }
+  function demo_even2() {
+    alert("Even mouse over...");
+  }
+  function demo_event3() {
+    console.log("even onmouseenter");
+
+  }
+  function demo_onload() {
+    alert("Loading page...");
+  }
+  function logWord() {
+    console.log("Keydown....");
+  }
+  function logWord1() {
+    console.log("Keyup...");
+  }
+  function logWord2() {
+    console.log("Keypress...");
+  }
+  function logWord3() {
+    console.log("onchange...")
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+*{
+  /*font-size: 100px;*/
+}
+h1{
+  color: red;
+}
+h2{
+  color: green;
+}
+h3{
+
+}
+#h3_demo{
+  color: pink;
+}
+.h4_class{
+  color: blueviolet;
+}
+.h5_class{
+  color: brown;
+}
+p.doan_van{
+  color: yellow;
+}
+.doan_van span{
+  color: red;
+}
+input[type="text"][name="email"]{
+  color: yellowgreen;
+}
+p *{color: blue}
+h5 span{
+  color: blue;
+}
+h5>span{
+  color: red;
+}
+ul > li{ color: red}
+ul>li>ul>li{ color: yellow}
+h1.demo_css_text{
+  font-family: Arial;
+  font-size: 50px;
+  font-weight: bold;/*100 300 400 500 600 700 800 900*/
+  font-style: italic;/* VIet nghieng*/
+  text-align: justify;/* Can doan van; left  center right*/
+  text-transform: uppercase;/*  uppercase Viet hoa het, lowercase Viet thuong het , captialize chu dau tien trong moi tu duoc viet hoa*/
+  text-decoration: underline;/*  none  line-throught  overline*/
+  text-indent: 50px;/* Lui dau dong*/
+}
+.text{
+  font-family: NunitoSans;
+  font-size: 16px;
+  color: 666666;
+}
+background-image: url("images/VA.jpg");
+background-repeat: repeat;
+background-position: center;

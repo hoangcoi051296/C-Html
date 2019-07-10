@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ABCDXYZ</title>
+</head>
+<body>
+<button id="timeout" onclick="demNguoc()">start</button>
+<input id="input_text" type="text" name="input_text">
+<script type="text/javascript">
+  var sec =59;
+  var min;
+  function demNguoc() {
+    min= document.getElementById("input_text").value;
+    setInterval(function () {
+      sec--;
+      if (sec==0){
+        min--;
+        if(min>0){
+          sec=59;
+        }
+      }
+      if (sec<10) {
+        sec = "0" + sec;
+      }
+      if (min==0 && sec==0){
+        clearInterval()
+      } else {
+        console.log(min+":"+sec);
+      }
+    },1000S);
+
+  }
+
+
+</script>
+      </body>
+</html>

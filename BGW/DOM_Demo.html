@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM DEMO</title>
+</head>
+<body>
+<div id="divdemo" class="div_class"
+     style="width: 200px;height: 200px ;background-color: #b3d4fc"> Content division</div>
+<div class="div_class" style="width: 200px;height: 200px ;background-color: mediumvioletred"> Content2</div>
+</br>
+<input id="input_text" type="text" name="input_text">
+<button type="button" onclick="Green()">Green</button>
+<button type="button" onclick="Orange()"> Orange</button>
+<button type="button" onclick="Red()">Red</button>
+
+<script type="text/javascript">
+  function Green() {
+  var x=document.getElementById("divdemo");
+  x.style.backgroundColor="green";
+  //x.style.width="500px";
+  x.style.color="white";
+  x.style.fontSize="30px";
+  x.innerText=" Day la doan text moi";
+  x.classList.add("demo_add_class");
+  x.classList.remove("divclass");
+  if(x.classList.contains("divclass")){
+    x.classList.remove("divclass");};
+  x.innerHTML="<p>Hello world</p>";
+  //x.outerHTML= x.outerHTML+x.outerHTML;
+  var ip= document.getElementById("input_text")
+    var v= ip.value;
+  x.style.width=v+"px";
+
+  }
+  function Orange() {
+    var d = document.getElementsByClassName("div_class");
+    for (var i=0;i<d.length;i++){
+      d[i].style.backgroundColor = "orange";
+    }
+  }
+  function Red() {
+    var d = document.getElementsByTagName("div");
+    console.log(d);
+    for (var i=0;i<d.length;i++){
+      d[i].style.backgroundColor = "violet";
+    }
+  }
+
+</script>
+</body>
+</html>

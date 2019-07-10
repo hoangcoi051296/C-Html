@@ -1,0 +1,13 @@
+.box-demo{
+  float: left;
+  width: 100%;
+  height: 200px;
+}
+.box-1{
+  height: 200px;
+  background-color: yellow;
+}
+.box-2{
+  height: 200px;
+  background-color: #00BF96;
+}

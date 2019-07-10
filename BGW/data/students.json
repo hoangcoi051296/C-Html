@@ -1,0 +1,11 @@
+{
+  "Title" : "Danh sach",
+  "students": [{
+    "name" : "Thai Hoang",
+    "mark" : "5"
+  },
+    {
+      "name": "Van Anh",
+      "mark": "6"
+    }]
+}

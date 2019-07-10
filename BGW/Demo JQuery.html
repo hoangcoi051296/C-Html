@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo jQuery</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+<div id="div_jq" class="demo_jq" style="width: 200px; height: 200px;background-color: #b3d4fc">
+  Content division</div>
+<button type="button" onclick="Green()">Green</button>
+<button type="button" onclick="boxshow()">Box Show</button>
+<button type="button" onclick="boxhide()">Box Hide</button>
+<button type="button" onclick="Affect()">Affect</button>
+<input type="text" name="name" class="input-text">
+        <script type="text/javascript">
+          function Affect() {
+            var d=$("div#div_jq.demo_jq");//$ tuong duong voi jQuery
+            //d.toggle;
+            //d.fadetoggle;
+            d.slideToggle(1000);
+
+          }
+          function boxshow() {
+            var d=$("div#div_jq.demo_jq");
+            d.fadeIn(1000);
+            //d.slideDown(1000);
+
+          }
+          function boxhide() {
+            var d=$("div#div_jq.demo_jq");
+           // d.fadeOut(1000);
+            d.slideUp(1000);
+
+          }
+          function Green() {
+            var d= $( "div#div_jq.demo_jq");
+            //d.css( "background-color", " red");
+            // d.css(
+            //   {
+            //     "background-color": "green",
+            //     "width": "400px",
+            //   }
+            // );
+
+            d.animate({
+              "width": $(".input-text").val()+"px"
+            },1000)
+            d.text("hello world");
+            if(d.hasClass("demo_jq")){
+              d.addClass("demo_demo")
+            }else{
+              d.removeClass("demo_demo")
+            }
+            d.html(" <p> Hello !</p>");
+            d.append("<p> haha</p>");
+            d.after(" ")
+            d.before(" ")
+          }
+        </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "title": "Danh sach san pham",
+  "sanpham": [
+    {"name": "iphone X",
+      "price": "200",
+      "SL": "10"
+
+    },
+    {
+      "name": "iphone 8",
+      "price": "150",
+      "SL": 20
+    },
+    {
+      "name": "iphone 7",
+      "price": "100",
+      "SL": "50"
+    }
+  ]
+}
